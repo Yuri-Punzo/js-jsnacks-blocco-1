@@ -7,6 +7,7 @@ const secondWord = prompt("Scrivi un'altra parola");
 
 let longerWord;
 let shorterWord;
+let equalWord
 
 if (firstWord.length > secondWord.length) {
     console.log(firstWord , secondWord );
@@ -16,7 +17,13 @@ if (firstWord.length > secondWord.length) {
     console.log(secondWord , firstWord);
     longerWord = secondWord;
     shorterWord = firstWord;
+} else {
+    console.log(firstWord , secondWord , "else")
+    equalWord = true;    
 }
 
-document.getElementById("longer_word").innerHTML = `${longerWord} , ${shorterWord}`;
+document.getElementById("longer_word").innerHTML = `${longerWord} parola più lunga, ${shorterWord} parola più corta`;
 
+if (equalWord) {
+    document.getElementById("longer_word").innerHTML = `${firstWord} , ${secondWord} eguale lunghezza`;
+}
