@@ -22,8 +22,8 @@ if (firstWord.length > secondWord.length) {
     equalWord = true;    
 }
 
-document.getElementById("longer_word").innerHTML = `${longerWord} parola più lunga, ${shorterWord} parola più corta`;
+document.getElementById("longer_word").innerHTML = ` "${longerWord}" parola più lunga, "${shorterWord}" parola più corta`;
 
 if (equalWord) {
-    document.getElementById("longer_word").innerHTML = `${firstWord} , ${secondWord} eguale lunghezza`;
+    document.getElementById("longer_word").innerHTML = `"${firstWord}" e "${secondWord}" sono di eguale lunghezza`;
 }
