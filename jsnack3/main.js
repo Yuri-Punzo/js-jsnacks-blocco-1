@@ -18,7 +18,10 @@ console.log(Number(number1) + Number(number2) + Number(number3) + Number(number4
 
 /* seconda versione con ciclo for */
 
+let sum = 0
 for (let i = 1; i <= 10; i++){
-    let askNumber = prompt("Dammi un numero");
-    console.log(askNumber);
+    let askNumber = Number(prompt("Dammi un numero"));
+    sum += askNumber;
 }
+
+console.log(sum);
