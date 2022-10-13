@@ -21,7 +21,7 @@ console.log(Number(number1) + Number(number2) + Number(number3) + Number(number4
 /* let sum = 0
 for (let i = 1; i <= 10; i++){
     let askNumber = Number(prompt("Dammi un numero"));
-    sum += askNumber;
+    sum += askNumber;  // --> sum = sum + askNumber
 }
 
 console.log(sum); */
