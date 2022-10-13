@@ -12,10 +12,12 @@ const vipsList = ["pincopanco",
 
 let inOrOut = "sei fuori..."
 
-for (let i = 0; i < vipsList.length; i++) {
+let i = 0;
+while (i < vipsList.length) {
     if (whoAreYou === vipsList[i]) {
         inOrOut = "sei dentro !"
     }
+    i++
 }
 
 console.log(inOrOut);
