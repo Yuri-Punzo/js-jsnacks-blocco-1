@@ -18,10 +18,23 @@ console.log(Number(number1) + Number(number2) + Number(number3) + Number(number4
 
 /* seconda versione con ciclo for */
 
-let sum = 0
+/* let sum = 0
 for (let i = 1; i <= 10; i++){
     let askNumber = Number(prompt("Dammi un numero"));
     sum += askNumber;
+}
+
+console.log(sum); */
+
+
+/* terza versione con whiile */
+
+let i = 0
+let sum = 0
+while (i < 10) {
+    let askNumber = Number(prompt("Dammi un numero"));
+    sum += askNumber;
+    i++;
 }
 
 console.log(sum);
